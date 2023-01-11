@@ -28,6 +28,10 @@ const userRewardImg = {
     4: '../img/top1.png'
 }
 
+setInterval(() => {
+    onRight();
+}, 2000);
+
 let mode = 'talent';
 let slideNumber = 0;
 
@@ -69,6 +73,21 @@ function onLeft() {
         slideNumber = slideNumber - 1;
         setRewards();
     }
+    else if (slideNumber == 0) {
+        mode == 'user' ? slideNumber = 4 : slideNumber = 3;
+        setRewards();
+    }
+}
+
+function onRight() {
+    if (slideNumber < 3 || (mode == 'user' && slideNumber < 4)) {
+        slideNumber = slideNumber + 1;
+        setRewards();
+    }
+    else if (slideNumber == 3 || (mode == 'user' && slideNumber == 4)) {
+        slideNumber = 0;
+        setRewards();
+    }
 }
 
 function setRewards() {
@@ -94,11 +113,4 @@ function setRewards() {
     }
     else
         document.getElementById('reward-description').innerHTML = talentRewardDescription[slideNumber];
-}
-
-function onRight() {
-    if (slideNumber < 3 || (mode == 'user' && slideNumber < 4)) {
-        slideNumber = slideNumber + 1;
-        setRewards();
-    }
 }
