@@ -32,7 +32,7 @@ setInterval(() => {
     onRight();
 }, 2000);
 
-let mode = 'user';
+let mode = 'talent';
 let slideNumber = 0;
 
 function hideGuidline() {
@@ -46,7 +46,7 @@ function showGuidline() {
 
 document.getElementById('column2').style.display = 'none';
 document.getElementById('column1').style.display = 'none';
-document.getElementById('talent-reward').style.display = 'none'
+document.getElementById('user-reward').style.display = 'none'
 
 function selectUserMode() {
     mode = 'user';
