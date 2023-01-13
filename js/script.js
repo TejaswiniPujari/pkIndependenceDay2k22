@@ -32,7 +32,7 @@ setInterval(() => {
     onRight();
 }, 2000);
 
-let mode = 'talent';
+let mode = 'user';
 let slideNumber = 0;
 
 function hideGuidline() {
