@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(../img/Bg-min.png);
+    background-image: url(/img/Bg-min.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }

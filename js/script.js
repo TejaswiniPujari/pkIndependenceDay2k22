@@ -14,18 +14,18 @@ const userRewardDescription = {
 }
 
 const rankImg = {
-    0: '../img/1st-rank.png',
-    1: '../img/2nd-rank.png',
-    2: '../img/3rd-rank.png',
-    3: '../img/4th-rank.png',
-    4: '../img/5th-rank.png'
+    0: '/img/rank/1st-rank.png',
+    1: '/img/rank/2nd-rank.png',
+    2: '/img/rank/3rd-rank.png',
+    3: '/img/rank/4th-rank.png',
+    4: '/img/rank/5th-rank.png'
 }
 const userRewardImg = {
-    0: '../img/top3.png',
-    1: '../img/top2.png',
-    2: '../img/top1.png',
-    3: '../img/top1.png',
-    4: '../img/top1.png'
+    0: '/img/userRewards/top3.png',
+    1: '/img/userRewards/top2.png',
+    2: '/img/userRewards/top1.png',
+    3: '/img/userRewards/top1.png',
+    4: '/img/userRewards/top1.png'
 }
 
 setInterval(() => {
@@ -50,8 +50,8 @@ document.getElementById('user-reward').style.display = 'none'
 
 function selectUserMode() {
     mode = 'user';
-    document.getElementById('user').src = '../img/userSelect.png';
-    document.getElementById('talent').src = '../img/talentUnselect.png';
+    document.getElementById('user').src = '/img/userSelect.png';
+    document.getElementById('talent').src = '/img/talentUnselect.png';
     document.getElementById('user-reward').style.display = 'block';
     document.getElementById('talent-reward').style.display = 'none';
     slideNumber = 0;
@@ -60,8 +60,8 @@ function selectUserMode() {
 
 function selectTalentMode() {
     mode = 'talent';
-    document.getElementById('user').src = '../img/userUnselect.png';
-    document.getElementById('talent').src = '../img/talentSelect.png';
+    document.getElementById('user').src = '/img/userUnselect.png';
+    document.getElementById('talent').src = '/img/talentSelect.png';
     document.getElementById('user-reward').style.display = 'none';
     document.getElementById('talent-reward').style.display = 'block';
     slideNumber = 0;
